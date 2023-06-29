@@ -1,18 +1,3 @@
-﻿<#
-    .NOTES
-    ===========================================================================
-     Created with:  SAPIEN Technologies, Inc., PowerShell Studio 2020 v5.7.181
-     Created on:    2020-10-02 15:52
-     Created by:    Claussen
-     Organization:  NEOnet
-     Filename:      New-NetboxDCIMSite.ps1
-    ===========================================================================
-    .DESCRIPTION
-        A description of the file.
-#>
-
-
-
 function New-NetboxDCIMSite {
     <#
     .SYNOPSIS
@@ -52,7 +37,7 @@ function New-NetboxDCIMSite {
 
         [string]$Contact_Email,
 
-        [int]$Tenant_Group,
+        [int]$Group,
 
         [int]$Tenant,
 
@@ -61,6 +46,10 @@ function New-NetboxDCIMSite {
         [uint32]$Region,
 
         [string]$Description,
+        
+        [string]$Physical_Address,
+
+        [string]$Shipping_address,
 
         [string]$Comments,
 
