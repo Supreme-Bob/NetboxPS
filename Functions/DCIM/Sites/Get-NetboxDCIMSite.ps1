@@ -1,4 +1,3 @@
-﻿
 function Get-NetboxDCIMSite {
     [CmdletBinding(DefaultParameterSetName = 'Query')]
     [OutputType([pscustomobject])]
@@ -57,6 +56,12 @@ function Get-NetboxDCIMSite {
 
         [Parameter(ParameterSetName = 'Query')]
         [string]$Region,
+
+        [Parameter(ParameterSetName = 'Query')]
+        [uint32]$Group_ID,
+
+        [Parameter(ParameterSetName = 'Query')]
+        [string]$Group,
 
         [Parameter(ParameterSetName = 'Query')]
         [uint16]$Limit,
